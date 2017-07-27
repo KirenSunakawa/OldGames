@@ -1,0 +1,16 @@
+<div class="container" [ngStyle]="{'height.px':myPHeight,'width.px':myPWidth}">
+  <div class="row" style="background-color: fuchsia" [ngStyle]="{'height.px':myCalHeight,'width.px':myPWidth,'top.px':myCalcTop}">
+    <div class="col-md-10 col-xs-10 myAdustCol myScoreNum"
+         style="height:inherit;background-color: orchid" [ngStyle]="{'line-height.px':myCalHeight,'font-size.px':myCalcFontS}">
+      <div *ngIf="true; then selectBox"></div>
+      <ng-template #usualScore><span>{{getUsualScore()}}</span></ng-template>
+      <ng-template #everBestScore><span>{{getEverBestScore()}}</span></ng-template>
+      <ng-template #todayBestScore><span>{{getTodayBestScore()}}</span></ng-template>
+      <ng-template #potateScore><span>{{getPotateScore()}}</span></ng-template>
+
+    </div>
+    <div class="col-md-2 col-xs-2 myAdustCol" style="height:inherit;background-color: springgreen">
+      <span class="myScoreTen" [ngStyle]="{'top.px':myCalcTenTop}">点</span>
+    </div>
+  </div>
+</div>

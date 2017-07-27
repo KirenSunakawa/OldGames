@@ -1,0 +1,45 @@
+<!--page-->
+<div style="height: 640px;width:960px;margin: auto;background-color: firebrick;">
+    <!--gridsystem-->
+  <div class="container myContain">
+    <!--divide into two are-->
+    <div class="row myRow" >
+      <!--left area-->
+      <div class="col-md-6 col-xs-6" style="background-color: coral;height: 640px;width:480px;padding:0px">
+        <!--navgation-->
+        <div style="height: 56px;background-color: aliceblue;">
+          <app-navbar></app-navbar>
+        </div>
+        <!--top area-->
+        <div style="background-color: blue;height: 260px;margin: 8px 4px 8px 8px">
+          <app-login-panel></app-login-panel>
+        </div>
+        <!--bottom area-->
+        <div style="background-color: antiquewhite;height: 300px;margin: 8px 4px 8px 8px">
+          <!--divide into two are-->
+          <div class="row" style="height: 300px;width:468px;background-color:darkgreen;margin: 0px;">
+            <!--left area-->
+            <div class="col-md-8 col-xs-8" style="background-color: darkkhaki;height: 300px;width: 300px;padding: 0px;margin-right: 8px"></div>
+            <!--score right area-->
+            <div class="col-md-4 col-xs-4" style="height: 300px;width:160px;padding: 0px;background-color: yellow;">
+              <div style="background-color: deeppink;height: 146px;margin-bottom: 8px;">
+               <app-score-block [myPHeight]="146" [myPWidth]="160" [templateName]="'usualScore'" ></app-score-block>
+              </div>
+              <div style="background-color: lawngreen;height: 146px;margin-top: 8px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--right area-->
+      <div class="col-md-6 col-xs-6" style="height: 640px;width: 480px;padding: 0px;">
+        <div style="height:316px;background-color: aqua;margin: 8px 8px 8px 4px;">
+
+        </div>
+       <!--processing-area-->
+        <div style="background-color: darkorange;height: 300px;margin:0px 8px 8px 4px;">
+          <app-canvas [cHeight]="300" [cWidth]="460"></app-canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

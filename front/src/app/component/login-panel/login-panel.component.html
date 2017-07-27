@@ -1,0 +1,51 @@
+<div class="container">
+  <div class="row">
+    <div class="myItemArea" style="background-color: darkkhaki;">
+      <form novalidate #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <label>
+          <span>Full name</span>
+          <input
+            type="text"
+            placeholder="Your full name"
+            name="name"
+            ngModel
+            #userName="ngModel"
+            minlength="2"
+            required>
+        </label>
+        <div *ngIf="userName.errors?.required && userName.touched" class="error">
+          Name is required
+        </div>
+        <div *ngIf="userName.errors?.minlength && userName.touched" class="error">
+          Minimum of 2 characters
+        </div>
+        <div ngModelGroup="account" #userAccount="ngModelGroup">
+          <label>
+            <span>Email address</span>
+            <input
+              type="email"
+              placeholder="Your email address"
+              name="email"
+              ngModel
+              #userEmail="ngModel"
+              required>
+          </label>
+          <label>
+            <span>Confirm address</span>
+            <input
+              type="email"
+              placeholder="Confirm your email address"
+              name="confirm"
+              ngModel
+              #userConfirm="ngModel"
+              required>
+          </label>
+          <div *ngIf="userAccount.invalid && userAccount.touched" class="error">
+            Both emails are required
+          </div>
+        </div>
+        <button type="submit" [disabled]="f.invalid">Sign up</button>
+      </form>
+    </div>
+  </div>
+</div>

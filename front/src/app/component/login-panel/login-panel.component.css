@@ -1,0 +1,10 @@
+.container{
+  height: 260px;
+  width: 468px;
+  margin: 0px;
+}
+.myItemArea{
+  height: 260px;
+  width: 468px;
+  padding: 0px 8px;
+}

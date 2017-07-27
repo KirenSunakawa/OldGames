@@ -1,0 +1,58 @@
+.myPanel{
+  background-color: white;
+  height:65px;
+  width:468px ;
+  margin-bottom:8px ;
+}
+.myPanelLineLeft{
+  font-size: 45px;
+  line-height:65px;
+  padding: 0px;
+  height: 65px;
+  width: 360px;
+}
+.myPanelLineRight{
+  padding: 0px;
+  height: 65px;
+  width: 100px;
+  margin-left:8px ;
+}
+.container{
+  width: 468px;
+  height: 65px;
+}
+.myBtnsPanel{
+  background-color: white;
+  height:41px;
+  margin-bottom:8px ;
+}
+.myPanelSentence{
+  font-size: 45px;
+  line-height:65px;
+  margin: 0px;
+}
+.myScore{
+  font-size: 45px;
+  line-height:65px;
+  display: inline-block;
+  text-align: right;
+  width: 76px;
+  margin: 0px;
+}
+.myTen{
+  display: inline-block;
+  margin: 0px;
+  width: 24px;
+  height: 32px;
+}
+.myBtnsPanel>.container{
+  height: 41px;
+}
+.myTwitPostArea{
+  height:41px;
+}
+.myLogoutArea{
+  height:41px;
+  width: 156px;
+}
+

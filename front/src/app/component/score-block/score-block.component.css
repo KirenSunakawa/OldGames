@@ -1,0 +1,16 @@
+.row{
+  position: relative;
+}
+
+.myAdustCol{
+  padding: 0px;
+}
+
+.myScoreNum{
+  text-align: right;
+}
+
+.myScoreTen{
+  position: relative;
+  display: inline-block;
+}

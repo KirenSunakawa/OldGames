@@ -1,0 +1,32 @@
+/*inkscape-image-font showcardgothic*/
+/*logo-image-font-HGPgothicE*/
+.myNavBar{
+  background-color: crimson;
+  height: 56px;
+  padding:8px 8px ;
+  position: relative;
+
+}
+.myNavTitle{
+  background-color: azure;
+  height: 40px;
+  width: 300px;
+}
+.myUserWin{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top:8px;
+  left:436px;
+}
+.myUserWin {
+  background-image: url("../../../assets/img/face.png");
+  -moz-background-image:url("../../../assets/img/face.png") ;
+  -o-background-image: url("../../../assets/img/face.png");
+  -webkit-background-image: url("../../../assets/img/face.png");
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  background-position: center center;
+}
